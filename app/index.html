@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
     
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="style/style.css">
@@ -395,14 +395,146 @@
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
-            
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="services__container container grid">
+                <!--==================== SERVICES 1 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-border-all services__icon"></i>
+                        <h3 class="services__title">UI/UX <br> Designer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="fas fa-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Web page development</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>I create UX element interactions</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>        
+                <!--==================== SERVICES 2 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-code services__icon"></i>
+                        <h3 class="services__title">Frontend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="fas fa-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>Web page development</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>I create UX element interactions</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="far fa-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>        
+            </div>
 
         </section>
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
-            
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
 
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./img/React-expense-App.gif" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            </p><h3 class="portfolio__title">React Expsense App</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with animated interactions</p>
+                            <a href="http://127.0.0.1:5501/todo-app/index.html" target="_blank" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./img/Recipe-App.gif" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            </p><h3 class="portfolio__title">Recipe App</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with animated interactions</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./img/To-Do-App.gif" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            </p><h3 class="portfolio__title">To-Do App</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with animated interactions</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"><i class="fas fa-angle-right swiper-portfolio-icon"></i></div>
+                
+                <div class="swiper-button-prev"><i class="fas fa-angle-left swiper-portfolio-icon"></i></div>
+                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>       
+            </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
@@ -434,7 +566,7 @@
     
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="js/script.js"></script>
